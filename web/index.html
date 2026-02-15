@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AFCA Web App</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <h1>AFCA Web App</h1>
+      <p>Find verified providers and book appointments.</p>
+    </header>
+
+    <main>
+      <section class="card">
+        <h2>Providers</h2>
+        <button id="loadProviders">Load Providers</button>
+        <ul id="providerList"></ul>
+      </section>
+
+      <section class="card">
+        <h2>Book Appointment</h2>
+        <form id="appointmentForm">
+          <label>Patient Name <input name="patient_name" required /></label>
+          <label>Provider ID <input name="provider_id" required /></label>
+          <label>Scheduled At <input name="scheduled_at" type="datetime-local" required /></label>
+          <label>
+            Mode
+            <select name="mode" required>
+              <option value="in_person">In-person</option>
+              <option value="video">Video</option>
+              <option value="audio">Audio</option>
+              <option value="pstn">PSTN</option>
+            </select>
+          </label>
+          <label>Reason <textarea name="reason"></textarea></label>
+          <button type="submit">Create Appointment</button>
+        </form>
+        <p id="result"></p>
+      </section>
+    </main>
+
+    <script src="app.js"></script>
+  </body>
+</html>
