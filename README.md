@@ -2,19 +2,19 @@
 
 Healthcare, made accessible.
 
-## Repository Contents
+## What's in this repository
 
-- `backend/` — runnable backend service and API
-- `web/` — browser-based web app
-- `mobile/` — Flutter mobile app scaffold
-- `docs/` — PRD, setup, and run instructions
+- Product and planning documentation in `docs/`
+- Initial backend API scaffold in `backend/` (FastAPI)
 
-## Quick Run (Backend + Web)
+## Quick start backend
 
 ```bash
-python backend/server.py
+cd backend
+python -m venv .venv
+source .venv/bin/activate
+pip install -r requirements.txt
+uvicorn app.main:app --reload
 ```
 
-Open `http://127.0.0.1:8000/`.
-
-For detailed run steps, see `docs/RUN_AND_DEVELOP.md`.
+Then open `http://127.0.0.1:8000/docs`.
