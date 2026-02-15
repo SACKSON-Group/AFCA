@@ -1,0 +1,56 @@
+:root {
+  color-scheme: light;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  margin: 0;
+  background: #f5f7fb;
+  color: #111;
+}
+
+header {
+  background: #0a4ea1;
+  color: #fff;
+  padding: 1rem 1.5rem;
+}
+
+main {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1rem;
+  padding: 1rem;
+}
+
+.card {
+  background: #fff;
+  border-radius: 10px;
+  padding: 1rem;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+}
+
+label {
+  display: block;
+  margin-bottom: 0.75rem;
+}
+
+input,
+select,
+textarea,
+button {
+  width: 100%;
+  margin-top: 0.3rem;
+  padding: 0.55rem;
+}
+
+button {
+  background: #0a4ea1;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+li {
+  margin: 0.45rem 0;
+}
